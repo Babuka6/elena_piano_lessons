@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Chapavalova - Piano and Vocal Teacher</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        :root {
+            --dark-navy: #5A639C;
+            --bright-navy: #7776B3;
+            --purple: #9B86BD;
+            --pink: #E2BBE9;
+            --white: #FFFFFF;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--white);
+            color: var(--dark-navy);
+             
+        }
+        .navbar {
+            background-color: var(--dark-navy) !important;
+        }
+        .navbar-light .navbar-brand,
+        .navbar-light .navbar-nav .nav-link {
+            color: var(--white);
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: var(--pink);
+        }
+        .hero-image {
+            background: linear-gradient(rgba(90, 99, 156, 0.7), rgba(90, 99, 156, 0.7)), url('/api/placeholder/1200/400') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+        }
+        .hero-text {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .about-image {
+            max-width: 200px;
+            height: auto;
+            border: 5px solid var(--bright-navy);
+            
+        }
+        .section-title {
+            color: var(--dark-navy);
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: var(--pink);
+            bottom: -5px;
+            left: 0%;
+        }
+        .service-card {
+            height: 100%;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            background-color: var(--white);
+            
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card .card-body {
+            background-color: var(--bright-navy);
+            color: var(--white);
+        }
+        .service-card .card-title {
+            color: var(--white);
+        }
+        
+        .contact-card {
+            background-color: var(--bright-navy);
+            color: var(--white);
+        }
+        .contact-icon {
+            color: var(--pink);
+        }
+        footer {
+            background-color: var(--dark-navy);
+            color: var(--white);
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Elena Chapavalova</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#examples">Student Spotlight</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-image d-flex align-items-center">
+        <div class="container text-center text-white hero-text">
+            <h1 class="display-4 fw-bold">Elena Chapavalova</h1>
+            <p class="lead">Professional Piano and Vocal Teacher</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="about" class="mb-5">
+            <h2 class="text-center mb-4 section-title">Who I Am</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <img src="./ElenaPiano.PNG" alt="Elena and Piano" class="about-image rounded-circle img-fluid  ">
+                </div>
+                <div class="col-md-8">
+                    <p class="lead">Hello! I'm Elena Chapavalova, a passionate piano and vocal teacher with extensive experience in music education. My goal is to open up the unique talent in each person and carefully guide them to their full musical potential with love and patience.</p>
+                    <h3 class="mt-4" style="color: var(--lavender);">Education & Experience</h3>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-graduation-cap me-2" style="color: var(--purple);"></i>Master's degree in Piano and Vocal Teaching, Tchaikovsky Moscow Conservatory</li>
+                        <li><i class="fas fa-music me-2" style="color: var (--purple);"></i>Taught in various music schools and institutions in Moscow</li>
+                        <li><i class="fas fa-microphone me-2" style="color: var(--purple);"></i>Worked in singing ensemble Madrigal</li>
+                        <li><i class="fas fa-globe-americas me-2" style="color: var(--purple);"></i>Continued as a private music teacher in the US since 2000</li>
+                        <li><i class="fas fa-church me-2" style="color: var(--purple);"></i>Worked as an accompanist in churches and musical theatre</li>
+                        <li><i class="fas fa-school me-2" style="color: var(--purple);"></i>Experienced as a piano player in elementary school</li>
+                        <li><i class="fas fa-home me-2" style="color: var(--purple);"></i>Currently focusing on building a private studio in the South Bay area</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="mb-5">
+            <h2 class="text-center mb-4 section-title">Services & Rates</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Private Lessons</h3>
+                            <p class="card-text">One-on-one instruction tailored to your needs and goals.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-home me-2" style="color: var(--pink);"></i>In your home: $80/hour</li>
+                                <li><i class="fas fa-music me-2" style="color: var(--pink);"></i>At my studio: $70/hour</li>
+                                <li><i class="fas fa-clock me-2" style="color: var(--pink);"></i>30-min class: $45</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Lesson Packages</h3>
+                            <p class="card-text">Save with our discounted lesson packages.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-gift me-2" style="color: var(--pink);"></i>4 lessons: $320</li>
+                                <li><i class="fas fa-percentage me-2" style="color: var(--pink);"></i>8 lessons: 15% off</li>
+                                <li><i class="fas fa-tags me-2" style="color: var(--pink);"></i>12 lessons: 20% off</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <h3 class="card-title">Teaching Approach</h3>
+                            <p class="card-text">A unique blend of traditional techniques and personalized guidance.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-graduation-cap me-2" style="color: var(--pink);"></i>Russian piano & vocal school</li>
+                                <li><i class="fas fa-heart me-2" style="color: var(--pink);"></i>Passion for music & children</li>
+                                <li><i class="fas fa-user me-2" style="color: var(--pink);"></i>Personalized for each student</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="examples" class="mb-5">
+            <h2 class="text-center mb-4 section-title">Student Spotlight</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@chapavalovakeys/video/7407612929060654366" data-video-id="7407612929060654366" style="max-width: 605px;min-width: 325px;" >
+                            <section>
+                                <a target="_blank" title="@chapavalovakeys" href="https://www.tiktok.com/@chapavalovakeys?refer=embed">@chapavalovakeys</a> 
+                                From beginner to virtuoso—watch Elena guide the way! 🌟🎶 
+                                <a title="piano" target="_blank" href="https://www.tiktok.com/tag/piano?refer=embed">#piano</a> 
+                                <a title="pianolesson" target="_blank" href="https://www.tiktok.com/tag/pianolesson?refer=embed">#pianolesson</a> 
+                                <a title="pianotok" target="_blank" href="https://www.tiktok.com/tag/pianotok?refer=embed">#pianotok</a> 
+                                <a title="fy" target="_blank" href="https://www.tiktok.com/tag/fy?refer=embed">#fy</a> 
+                                <a target="_blank" title="♬ original sound - Elena Chapavalova" href="https://www.tiktok.com/music/original-sound-7407612919787784991?refer=embed">♬ original sound - Elena Chapavalova</a>
+                            </section>
+                        </blockquote>
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@chapavalovakeys/video/7407613150498999583" data-video-id="7407613150498999583" style="max-width: 605px;min-width: 325px;" >
+                            <section>
+                                <a target="_blank" title="@chapavalovakeys" href="https://www.tiktok.com/@chapavalovakeys?refer=embed">@chapavalovakeys</a> 
+                                Unlock your musical potential with Elena’s expert guidance! 🎹🎓 
+                                <a title="piano" target="_blank" href="https://www.tiktok.com/tag/piano?refer=embed">#piano</a> 
+                                <a title="pianolesson" target="_blank" href="https://www.tiktok.com/tag/pianolesson?refer=embed">#pianolesson</a> 
+                                <a title="pianotok" target="_blank" href="https://www.tiktok.com/tag/pianotok?refer=embed">#pianotok</a> 
+                                <a title="fy" target="_blank" href="https://www.tiktok.com/tag/fy?refer=embed">#fy</a> 
+                                <a target="_blank" title="♬ original sound - Elena Chapavalova" href="https://www.tiktok.com/music/original-sound-7407613118030957342?refer=embed">♬ original sound - Elena Chapavalova</a>
+                            </section>
+                        </blockquote>
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ratio ratio-16x9">
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@chapavalovakeys/video/7407612463295810846" data-video-id="7407612463295810846" style="max-width: 605px;min-width: 325px;" >
+                            <section>
+                                <a target="_blank" title="@chapavalovakeys" href="https://www.tiktok.com/@chapavalovakeys?refer=embed">@chapavalovakeys</a> 
+                                Transforming passion into performance, one note at a time! 🎹✨ 
+                                <a title="piano" target="_blank" href="https://www.tiktok.com/tag/piano?refer=embed">#piano</a> 
+                                <a title="pianolesson" target="_blank" href="https://www.tiktok.com/tag/pianolesson?refer=embed">#pianolesson</a> 
+                                <a title="pianotok" target="_blank" href="https://www.tiktok.com/tag/pianotok?refer=embed">#pianotok</a> 
+                                <a target="_blank" title="♬ original sound - Elena Chapavalova" href="https://www.tiktok.com/music/original-sound-7407612441225448222?refer=embed">♬ original sound - Elena Chapavalova</a>
+                            </section>
+                        </blockquote>
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="text-center mb-4 section-title">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card contact-card">
+                        <div class="card-body">
+                            <ul class="list-unstyled text-center">
+                                <li><i class="fas fa-envelope me-2 contact-icon"></i>Email: elenachapavalova@gmail.com</li>
+                                <li><i class="fas fa-phone me-2 contact-icon"></i>Phone: (310) 503-4841</li>
+                                <li><i class="fab fa-tiktok me-2 contact-icon"></i>TikTok: @chapavalovakeys</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-3 mt-5">
+        <p>&copy; 2024 Elena Chapovalova Piano Studio. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
